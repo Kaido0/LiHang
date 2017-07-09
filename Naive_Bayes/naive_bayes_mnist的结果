@@ -1,0 +1,24 @@
+Start read data
+test_feature.shape： (29400, 784)
+train_feature.shape： (12600, 784)
+read data cost  6.56909584999  second 
+
+Start training
+0 : 1196.0
+1 : 1465.0
+2 : 1290.0
+3 : 1251.0
+4 : 1203.0
+5 : 1171.0
+6 : 1253.0
+7 : 1270.0
+8 : 1240.0
+9 : 1261.0
+conditional_probability
+(10, 784, 2)
+training cost  9.83150410652  second 
+
+Start predicting
+predicting cost  276.40216589  second 
+
+The accruacy socre is  0.838571428571
