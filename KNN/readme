@@ -2,6 +2,7 @@ hog特征提取
 
 参考：http://blog.csdn.net/zouxy09/article/details/7929348
 
+
 对于mnist数据集：
 窗口大小（也即图像大小）28×28
 block_size:14*14
@@ -9,12 +10,35 @@ block_stride:7
 cell_size:7*7
 bin：9
 
+
 因此：
 1.水平，垂直分别3个block构成一副图像（共9个block）
 2.4个cell构成一个block
 3.每个cell（49个像素点）提取出9（bin）个特征
 每个28×28图像可以提取出：9×4×9=324维特征
 
+
+
 knn模型，无需训练
 在训练集中找到与测试特征距离（这里用的是欧式距离）最近的k个点
 统计k标签，找到最多的标签即为测试特征的标签
+
+knn.py运行结果：
+
+Start read data
+(37800, 324)
+(4200, 324)
+read data cost  8.39751791954  second 
+
+Start training
+knn do not need to train
+training cost  2.19345092773e-05  second 
+
+Start predicting
+1
+2
+.....
+4199
+predicting cost  1684.08985209  second 
+
+The accruacy socre is  0.984523809524
