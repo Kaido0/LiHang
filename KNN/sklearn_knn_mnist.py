@@ -51,3 +51,11 @@ if __name__=='__main__':
 
     score = accuracy_score(test_label, test_predict)
     print "The accruacy socre is ", score
+    
+    
+    ##############             kaggle                ############
+    out_file = open("predictions.csv", "w")
+    out_file.write("ImageId,Label\n")
+    for i in range(len(test_pre)):
+        out_file.write(str(i+1) + "," + str(int(test_pre[i])) + "\n")
+    out_file.close()
