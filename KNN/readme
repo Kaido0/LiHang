@@ -23,7 +23,7 @@ knn模型，无需训练
 在训练集中找到与测试特征距离（这里用的是欧式距离）最近的k个点
 统计k标签，找到最多的标签即为测试特征的标签
 
-knn.py运行结果：
+knn_mnist.py运行结果：
 
 Start read data
 (37800, 324)
@@ -40,5 +40,19 @@ Start predicting
 .....
 4199
 predicting cost  1684.08985209  second 
+
+The accruacy socre is  0.984523809524
+
+
+sklearn_knn_mnist.py运行结果：
+Start read data
+read data cost  8.56581306458  second 
+
+Start training
+knn do not need to train
+training cost  1.41368508339  second 
+
+Start predicting
+predicting cost  166.225769043  second 
 
 The accruacy socre is  0.984523809524
